@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumery - Summerize long text into shorter paragraphs in seconds</title>
+    <link rel="stylesheet" href="/project/sumery.css">
+</head>
+<body>
+    <div class="logo" style="border-bottom: 1px solid rgb(207, 207, 207); padding-bottom: 10px;">SUMERY®</div>
+    <div class="container">
+        <div class="input-box" style="border-right: 1px solid rgb(207, 207, 207);">
+            <textarea rows="18" cols="74" placeholder="Enter some text here..."></textarea>
+            <button class="button" onclick="getAns()">Summarize</button>
+        </div>
+        <div class="output-box">
+            <div id="summary" placeholder="Summary will appear here..." style="display: none;">
+                <div id="spinner" class="spinner"></div>
+                <p id="response"></p>
+            </div>
+        </div>
+    </div>
+    <script src="/project/api.js"></script>
+</body>
+</html>
