@@ -15,9 +15,12 @@ async function getAns() {
     let text = document.getElementsByTagName("textarea")[0].value;
     let outputbox = document.getElementById("summary");
     let spinner = document.getElementById("spinner");
+    let response = document.getElementById("response");
+    response.style.display = "none";
     outputbox.style.display = "block";
     spinner.style.display = "block";
     let result = await query({ inputs: text, parameters: { min_length: 70, max_length: 125 } });
     spinner.style.display = "none";
+    response.style.display = "block";
     response.innerHTML = result[0]["summary_text"];
 }
