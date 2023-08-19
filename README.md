@@ -13,3 +13,9 @@ Current version has fixed length parameters specified in the promise. Clicking o
 
 ### Version 1.0.1:
 Removed bug where previously generated text stays on output box when summarized the next time.
+
+## Examplar usage
+![step 1](/Example/sumery1.png)
+![step 2](/Example/sumery2.png)
+![step 3](/Example/sumery3.png)
+![step 4](/Example/sumery4.png)
